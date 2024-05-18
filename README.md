@@ -8,6 +8,15 @@ Machine learning models (Convolutional Neural Networks (CNN), Random Forest (RF)
 The Sentinel-3 data is downloaded from Copernicus Browser (https://browser.dataspace.copernicus.eu/). 
 ![image](https://github.com/eunicewly/GEOL0069_final/assets/159627060/2fdbe29d-e72b-4c92-864a-1f3663a8896e)
 
+Manually, the 
+
+<img width="332" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/413aa4bc-a5a3-4732-b3a8-34b510c527d4">
+
+<img width="328" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/541e7b53-cabf-4f39-a7f3-074e71dc27cf">
+
+
+<img width="952" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/42e4dd93-804a-46d5-838e-9d1f1695dcc7">
+
 
 ## Docker
 
