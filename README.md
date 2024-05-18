@@ -14,6 +14,9 @@ Manually, the
 
 <img width="328" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/541e7b53-cabf-4f39-a7f3-074e71dc27cf">
 
+<img width="954" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/8a03e1b2-fcc3-4404-b97a-ff587085be12">
+
+
 
 <img width="952" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/42e4dd93-804a-46d5-838e-9d1f1695dcc7">
 
