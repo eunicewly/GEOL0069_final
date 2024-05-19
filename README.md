@@ -25,8 +25,8 @@ The true colour image of this data:
 This file is downloaded from Copernicus browser directly and uploaded to Google Drive.
 
 
-## Data pre-processing
-Opening a jupyter notebook (or follow the GEOL0069_final_cloud_classification.ipynb in this repository), run the code to
+## Data Pre-processing
+Opening a jupyter notebook (or follow the GEOL0069_final_cloud_classification.ipynb in this repository), run the code to:
 
 1. Convert the Sentinel-3 data from netCDF4 format to numpy arrays (.npy), and split them into 5 chunks such that it is possible for IRIS to display them in a single interface view (convert all "path_to_be_added" to the actual path where your data is located at):
 ```
