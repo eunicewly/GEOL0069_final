@@ -230,5 +230,29 @@ All three roi images (roi3a, roi3b, roi3c) are classified. These classification 
 
 
 ## Model creation
+(The details and codes can be found in GEOL0069_final_cloud_classification.ipynb in this repository)
+
+Training and testing data are then created from roi3a, for model (Convolutional Neural Networks (CNN), Random Forest (RF) and Vision Transformer (ViT)) creation. These three models are then applied to the three roi. The classification and confusion matrices are as follows:
+\
+\
+### For CNN:
+\
+![image](https://github.com/eunicewly/GEOL0069_final/assets/159627060/90dda281-a335-4739-b802-100939ccf578)
+\
+<img width="544" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/e2cd3463-5ac8-4a89-aaef-5ecf5f77ab9a">
+\
+\
+### For RF:
+![image](https://github.com/eunicewly/GEOL0069_final/assets/159627060/baa38682-5b66-4358-aeb7-abdcde147c55)
+\
+<img width="534" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/7656f197-7fdb-4b19-9224-2aa5e2f5e1b1">
+\
+\
+### For ViT:
+![image](https://github.com/eunicewly/GEOL0069_final/assets/159627060/309bf68c-f8ab-46b3-a7e9-3f128ac5576e)
+\
+<img width="537" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/79df5d64-6a1f-4899-813e-196cc10202e4">
+
+
 
 
