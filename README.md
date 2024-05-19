@@ -255,7 +255,9 @@ Training and testing data are then created from roi3a, for model (Convolutional 
 \
 \
 <img width="537" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/79df5d64-6a1f-4899-813e-196cc10202e4">
-
-
+\
+\
+\
+Full region rollout has been attempted but without paying Google (buying Google colab pro, for the extra RAM), it is not possible...
 
 
