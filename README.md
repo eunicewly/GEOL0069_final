@@ -133,7 +133,6 @@ Five chunk images are then created (chunk_1_band_21.npy, chunk_2_band_21.npy and
 
 \
 \
-
 2. Extract three region of interest (roi) from the 3rd chunk image (saved as image_chunk3):
 ```
 x1, y1, x2, y2 = [100,700,300,1000] # roi a
@@ -170,7 +169,7 @@ plt.show()
 ![image](https://github.com/eunicewly/GEOL0069_final/assets/159627060/8981b646-ef0b-4826-8270-a6c84cfe6aaa)
 \
 \
-4. Save the roi onto your computer to be loaded into IRIS for cloud classification:
+4. Save the roi onto your computer, preparing for loading into IRIS for cloud classification:
 ```
 path = "path_to_be_added"
 np.save(path + 'roi3a.npy', roi3a)
@@ -181,23 +180,34 @@ np.save(path + 'roi3c.npy', roi3c)
 
 
 ## Docker
-Docker is being utlised to run IRIS in a containerised environment, to simplify the installation and setting up of IRIS. Docker is installed following the guide from https://docs.docker.com/get-docker/. 
+Docker is being utlised to run IRIS in a containerised environment, to simplify the installation and setting up of IRIS. Thus, before running IRIS, docker is installed. Docker is installed following the guide from https://docs.docker.com/get-docker/. 
 
-1. In the terminal or command prompt on your computer, with your docker engine running, type
+1. Have the config.json file (available in this respository) saved in the folder you saved the three roi images.
+   
+
+2. In the terminal or command prompt on your computer, with your docker engine running, type
 ```
 docker pull totony4real/iris:1.0
 ```
 (keep the spacing) which will allow you to run IRIS in a Docker container and access the Iris web interface.
 
-2. Then type
+3. Then type
 ```
 docker run -p 80:5000 -v "path_to_file":/dataset/ --rm -it totony4real/iris:1.0 label /dataset/config.json
 ```
 with the "path_to_file" replaced by your actual path in which the Sentinel-3 data is saved.
 
-3. After that, open http://localhost:80 on your browser, create your own account by typing your username and password.
-<img width="318" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/485b9df3-4207-44fc-8d05-ff249fbd7e07">
+For example:
+
+<img width="758" alt="Screenshot 2024-05-19 154425" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/31103d6c-3c2b-441e-97ae-f395fd8e8d85">
+
+\
+4. After that, open http://localhost:80 on your browser, create your own account by typing your username and password.
+
+<img width="418" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/485b9df3-4207-44fc-8d05-ff249fbd7e07">
 
 
+## IRIS - Intelligently Reinforced Image Segmentation
+IRIS is a tool for supervised image segmentation of satellite imagery, in which the user manually classify some image pixels and AI (gradient boosted decision tree) the rest. It was designed to accelerate the creation of machine learning training datasets. 
 
-## IRIS
+<img width="954" alt="Screenshot 2024-05-14 235405" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/bd857f75-3395-4845-8707-04c55967daa5">
