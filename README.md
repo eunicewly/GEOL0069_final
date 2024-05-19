@@ -223,6 +223,7 @@ One of the classification results:
 <img width="954" alt="Screenshot 2024-05-14 235405" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/bd857f75-3395-4845-8707-04c55967daa5">
 
 
+
 All three roi images (roi3a, roi3b, roi3c) are classified. These classification represents the ground-truth, and are saved into the computer (as masks) and loaded into the jupyter notebook:
 ![image](https://github.com/eunicewly/GEOL0069_final/assets/159627060/d1ae9330-16ed-4b9d-a32f-4c9702b13957)
 
