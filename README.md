@@ -4,7 +4,7 @@
 This is the final assignment for GEOL0069 Artificial Intelligence for Earth Observation (AI4EO). It uses Sentinel-3 OLCI (Ocean and Land Colour Instrument) data over the Parque Nacional Amboró in Bolivia in the South American continent for cloud classification. Image pixels in 3 region of interest (roi) are being classified as cloud and non-cloud using IRIS (Intelligently Reinforced Image Segmentation), and they represent the "ground truth".
 Machine learning models (Convolutional Neural Networks (CNN), Random Forest (RF) and Vision Transformer (ViT)) are then created. The models are then applied to the 3 roi, and confusion matrices are calculated and created.
 
-This README.md describes the methods of (i) downloading data from Copernicus browser, (ii) data pre-processing for the creation of images to be loaded into IRIS, (iii) utilising docker and IRIS to classify image pixels. The details on the codes to create the models and classify images is available in the GEOL0069_final_cloud_classification.ipynb in this repository. 
+This README.md describes the methods of (i) downloading data from Copernicus browser, (ii) data pre-processing for the creation of images to be loaded into IRIS, and (iii) utilising docker and IRIS to classify image pixels. The details on the codes to create the models and classify images is available in the GEOL0069_final_cloud_classification.ipynb in this repository. 
 
 ## Copernicus Browser
 The Sentinel-3 data is downloaded from Copernicus Browser (https://browser.dataspace.copernicus.eu/). Manually, unders search, Sentinel-3 OLCI Level 1 EFR data from the 10th May 2024 is selected.
@@ -212,4 +212,22 @@ For example:
 ## IRIS - Intelligently Reinforced Image Segmentation
 IRIS is a tool for supervised image segmentation of satellite imagery, in which the user manually classify some image pixels and AI (gradient boosted decision tree) the rest. It was designed to accelerate the creation of machine learning training datasets. 
 
+Image pixels are classified into "cloud" and "non-cloud" class:
+
+<img width="587" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/eda5ef6f-dd82-49cd-9772-42d52f11b204">
+
+
+One of the classification results:
+
+
 <img width="954" alt="Screenshot 2024-05-14 235405" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/bd857f75-3395-4845-8707-04c55967daa5">
+
+
+All three roi images (roi3a, roi3b, roi3c) are classified. These classification represents the ground-truth, and are saved into the computer (as masks) and loaded into the jupyter notebook:
+![image](https://github.com/eunicewly/GEOL0069_final/assets/159627060/d1ae9330-16ed-4b9d-a32f-4c9702b13957)
+
+
+
+## Model creation
+
+
