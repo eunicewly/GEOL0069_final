@@ -7,14 +7,14 @@ Machine learning models (Convolutional Neural Networks (CNN), Random Forest (RF)
 This README.md describes the methods of (i) downloading data from Copernicus browser, (ii) data pre-processing for the creation of images to be loaded into IRIS, and (iii) utilising docker and IRIS to classify image pixels. The details on the codes to create the models and classify images is available in the GEOL0069_final_cloud_classification.ipynb in this repository. 
 
 ## Copernicus Browser
-The Sentinel-3 data is downloaded from Copernicus Browser (https://browser.dataspace.copernicus.eu/). Manually, unders search, Sentinel-3 OLCI Level 1 EFR data from the 10th May 2024 is selected.
+The Sentinel-3 data is downloaded from Copernicus Browser (https://browser.dataspace.copernicus.eu/). Manually, under search, Sentinel-3 OLCI Level 1 EFR data from the 10th May 2024 is selected.
 
 <img width="332" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/413aa4bc-a5a3-4732-b3a8-34b510c527d4">
 
 <img width="328" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/541e7b53-cabf-4f39-a7f3-074e71dc27cf">
 
 \
-This reveals that the file S3B_OL_1_EFR____20240510T140254_20240510T140554_20240510T154337_0180_093_010_3240_PS2_O_NR_004.SEN3 is available (shown below; the first search result):
+This reveals that the file S3B_OL_1_EFR____20240510T140254_20240510T140554_20240510T154337_0180_093_010_3240_PS2_O_NR_004.SEN3 is available (shown below; the first search result), and it is over the Parque Nacional Amboró in Bolivia in the South American continent:
 \
 <img width="800" alt="image" src="https://github.com/eunicewly/GEOL0069_final/assets/159627060/42e4dd93-804a-46d5-838e-9d1f1695dcc7">
 \
