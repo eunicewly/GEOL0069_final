@@ -1,10 +1,12 @@
 # GEOL0069_final
 
 ## Introduction
-This is the final assignment for GEOL0069 Artificial Intelligence for Earth Observation (AI4EO). It uses Sentinel-3 OLCI (Ocean and Land Colour Instrument) data over the Parque Nacional Amboró in Bolivia in the South American continent for cloud classification. Image pixels in 3 region of interest (roi) are being classified as cloud and non-cloud using IRIS (Intelligently Reinforced Image Segmentation), and they represent the "ground truth".
+This is the final assignment for GEOL0069 Artificial Intelligence for Earth Observation (AI4EO). Clouds play a vital role in weather, hydrological cycle and the radiation budget of the global atmosphere. It is therefore important to have accurate and automatic cloud detection and classification. 
+
+Here, Sentinel-3 OLCI (Ocean and Land Colour Instrument) data over the Parque Nacional Amboró in Bolivia in the South American continent are used for cloud classification. Image pixels in 3 region of interest (roi) are being classified as cloud and non-cloud using IRIS (Intelligently Reinforced Image Segmentation), and they represent the "ground truth".
 Machine learning models (Convolutional Neural Networks (CNN), Random Forest (RF) and Vision Transformer (ViT)) are then created. The models are then applied to the 3 roi, and confusion matrices are calculated and created.
 
-This README.md describes the methods of (i) downloading data from Copernicus browser, (ii) data pre-processing for the creation of images to be loaded into IRIS, and (iii) utilising docker and IRIS to classify image pixels. The details on the codes to create the models and classify images is available in the GEOL0069_final_cloud_classification.ipynb in this repository. 
+This README.md describes the methods of (i) downloading data from Copernicus browser, (ii) data pre-processing for the creation of images to be loaded into IRIS, and (iii) utilising docker and IRIS to classify image pixels. All of the codes used to create the models and classify images is available in the GEOL0069_final_cloud_classification.ipynb in this repository. 
 
 ## Copernicus Browser
 The Sentinel-3 data is downloaded from Copernicus Browser (https://browser.dataspace.copernicus.eu/). Manually, under search, Sentinel-3 OLCI Level 1 EFR data from the 10th May 2024 is selected.
