@@ -1,7 +1,8 @@
 # GEOL0069_final
 
 ## Introduction
-This is the final assignment for GEOL0069 Artificial Intelligence for Earth Observation (AI4EO). Clouds play a vital role in weather, hydrological cycle and the radiation budget of the global atmosphere. It is therefore important to have accurate and automatic cloud detection and classification. 
+This is the final assignment for GEOL0069 Artificial Intelligence for Earth Observation (AI4EO). Clouds play a vital role in weather, hydrological cycle and the radiation budget of the Earth-atmosphere system. The presence of cloud scatter and absorb shortwave solar radiation, and re-emit longwave radiation. Besides, for the application of satellite imagery in retrieving information (e.g. land and surface temperature, vegetation, trace gas concentrations), clouds can be a contaminant. It is therefore important to have accurate and automatic cloud detection and classification, such that weather and climate processes can be better modelled, and cloud-free pixels can be isolated and utilised for other applications.
+
 
 Here, Sentinel-3 OLCI (Ocean and Land Colour Instrument) data over the Parque Nacional Amboró in Bolivia in the South American continent are used for cloud classification. Image pixels in 3 region of interest (roi) are being classified as cloud and non-cloud using IRIS (Intelligently Reinforced Image Segmentation), and they represent the "ground truth".
 Machine learning models (Convolutional Neural Networks (CNN), Random Forest (RF) and Vision Transformer (ViT)) are then created. The models are then applied to the 3 roi, and confusion matrices are calculated and created.
